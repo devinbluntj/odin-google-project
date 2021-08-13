@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: $font-main;
+}
+
+body {
+    max-width: 100%;
+    font-size: $font-size-main;
+}
+
+
+//Media queries
+
+@mixin max-xs {
+    @media (max-width: $screen-xs-max) {
+        @content;
+    }
+}
